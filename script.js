@@ -51,4 +51,4 @@ eraserMode.addEventListener("click", () => {
 });
 
 // Call the makeGrid function
-makeGrid(16);
+makeGrid(defaultSize);
