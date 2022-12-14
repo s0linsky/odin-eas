@@ -14,19 +14,19 @@
   border: 0.5px solid rgb(199, 16, 16);
 }
 
+.btns {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 53%;
+  z-index: 9999;
+}
+
 #color {
   width: 100px;
-  z-index: 9999;
-  position: absolute;
-  bottom: 60%;
   background-color: blue;
 }
 
 #eraser {
   width: 100px;
-  z-index: 9999;
-  position: absolute;
-  bottom: 55%;
   background-color: red;
 }
-
