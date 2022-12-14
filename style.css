@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+button {
+  width: 100px;
+  height: 25px;
+}
+
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -27,11 +32,23 @@
 }
 
 #color {
-  width: 100px;
-  background-color: blue;
+  color: white;
+  background-color: rgb(84, 84, 84);
+}
+
+#rainbow {
+  width: 120px;
+  color: white;
+  transition: color .3s ease-out;
+  background: linear-gradient(100deg, red, yellow, green, blue, purple);
+}
+
+#rainbow:hover {
+  color: black;
+  transition: color .3s ease-in;
 }
 
 #eraser {
-  width: 100px;
+  color: white;
   background-color: red;
 }
