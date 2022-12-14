@@ -2,7 +2,7 @@
 const defaultSize = "20";
 const defaultColor = "#333";
 const colorMode = "color";
-const eraserMode = "eraser"
+const eraserMode = "eraser";
 const defaultMode = colorMode;
 let currentSize = defaultSize;
 let currentColor = defaultColor;
@@ -25,6 +25,16 @@ function makeGrid(size) {
     cell.id = "grid-cell";
     // cell.innerText = i + 1;
     container.appendChild(cell);
+  }
+}
+
+// Change the color
+function changeColor(e) {
+  if (e.type === "mouseover" && !mouseDown) return;
+  if (currentMode === "color") {
+    e.target.style.backgroundColor = currentColor;
+  } else if (currentMode === "eraser") {
+    e.target.style.backgroundColor = "rgb(167, 173, 133)";
   }
 }
 
