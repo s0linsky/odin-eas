@@ -3,9 +3,14 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(57, 56, 56);
+}
+
 button {
   width: 100px;
   height: 25px;
+  border: 1px black solid
 }
 
 #wrapper {
@@ -27,6 +32,9 @@ button {
   border: 1px solid rgb(84, 84, 84);
 }
 
+#size {
+  margin-bottom: 10px;
+}
 #btns {
   margin-top: 10px;
 }
