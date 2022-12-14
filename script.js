@@ -38,5 +38,17 @@ function changeColor(e) {
   }
 }
 
+// Color mode
+colorMode = document.getElementById("color");
+colorMode.addEventListener("click", () => {
+  currentMode = "color";
+});
+
+// Eraser mode
+eraserMode = document.getElementById("eraser");
+eraserMode.addEventListener("click", () => {
+  currentMode = "eraser";
+});
+
 // Call the makeGrid function
 makeGrid(16);
