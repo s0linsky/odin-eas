@@ -1,5 +1,5 @@
 // Define global variables
-const defaultSize = "20";
+const defaultSize = "35";
 const defaultColor = "#333";
 const colorMode = "color";
 const eraserMode = "eraser";
@@ -13,8 +13,10 @@ let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
 
+// Select the wrapper
+const wrapper = document.getElementById("wrapper")
 // Select the container div
-const container = document.getElementById("container");
+const container = document.getElementById("grid-container");
 
 // Create the grid
 function makeGrid(size) {
