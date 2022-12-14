@@ -1,3 +1,17 @@
+// Define global variables
+const defaultSize = "20";
+const defaultColor = "#333";
+const colorMode = "color";
+const eraserMode = "eraser"
+const defaultMode = colorMode;
+let currentSize = defaultSize;
+let currentColor = defaultColor;
+let currentMode = defaultMode;
+let mouseDown = false;
+// Mouse toggle
+document.body.onmousedown = () => (mouseDown = true);
+document.body.onmouseup = () => (mouseDown = false);
+
 // Select the container div
 const container = document.getElementById("container");
 
