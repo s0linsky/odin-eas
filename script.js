@@ -23,7 +23,6 @@ function makeGrid(size) {
     let cell = document.createElement("div");
     cell.classList.add("grid-item");
     cell.id = "grid-cell";
-    // cell.innerText = i + 1;
     container.appendChild(cell);
   }
 }
@@ -38,17 +37,17 @@ function changeColor(e) {
   }
 }
 
-// Color mode
-colorMode = document.getElementById("color");
-colorMode.addEventListener("click", () => {
-  currentMode = "color";
-});
+// // Color mode
+// colorMode = document.getElementById("color");
+// colorMode.addEventListener("click", () => {
+//   currentMode = defaultMode;
+// });
 
-// Eraser mode
-eraserMode = document.getElementById("eraser");
-eraserMode.addEventListener("click", () => {
-  currentMode = "eraser";
-});
+// // Eraser mode
+// eraserMode = document.getElementById("eraser");
+// eraserMode.addEventListener("click", () => {
+//   currentMode = "eraser";
+// });
 
 // Call the makeGrid function
-makeGrid(defaultSize);
+makeGrid(16);
