@@ -3,12 +3,13 @@ const defaultSize = "20";
 const defaultColor = "#333";
 const colorMode = "color";
 const eraserMode = "eraser";
-const defaultMode = colorMode;
+const defaultMode = "color";
 let currentSize = defaultSize;
 let currentColor = defaultColor;
 let currentMode = defaultMode;
-let mouseDown = false;
+
 // Mouse toggle
+let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
 
@@ -23,6 +24,8 @@ function makeGrid(size) {
     let cell = document.createElement("div");
     cell.classList.add("grid-item");
     cell.id = "grid-cell";
+    cell.addEventListener("mouseover", changeColor);
+    cell.addEventListener("mousedown", changeColor);
     container.appendChild(cell);
   }
 }
@@ -37,17 +40,17 @@ function changeColor(e) {
   }
 }
 
-// // Color mode
-// colorMode = document.getElementById("color");
-// colorMode.addEventListener("click", () => {
-//   currentMode = defaultMode;
-// });
+// Color mode
+let colorBtn = document.getElementById("color");
+colorBtn.addEventListener("click", () => {
+  currentMode = colorMode;
+});
 
-// // Eraser mode
-// eraserMode = document.getElementById("eraser");
-// eraserMode.addEventListener("click", () => {
-//   currentMode = "eraser";
-// });
+// Eraser mode
+eraserBtn = document.getElementById("eraser");
+eraserBtn.addEventListener("click", () => {
+  currentMode = eraserMode;
+});
 
 // Call the makeGrid function
-makeGrid(16);
+makeGrid(defaultSize);
