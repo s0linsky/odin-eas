@@ -1,17 +1,16 @@
-:root {
-  --grid-cols: 1;
-  --grid-rows: 1;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 #container {
   display: grid;
-  grid-gap: 1em;
-  grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-gap: 0;
 }
 
 .grid-item {
-  padding: 1em;
-  border: 1px solid rgb(199, 16, 16);
+  padding: 0;
+  background-color: rgb(167, 173, 133);
+  border: 0.5px solid rgb(199, 16, 16);
   text-align: center;
 }
