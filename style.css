@@ -31,6 +31,11 @@ button {
   background-color: rgb(167, 173, 133);
   border: 1px solid rgb(84, 84, 84);
 }
+#grid-cell {
+  padding: 0;
+  background-color: rgb(167, 173, 133);
+  border: 1px solid rgb(84, 84, 84);
+}
 
 #size {
   margin-bottom: 10px;
