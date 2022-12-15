@@ -50,7 +50,7 @@ button {
 }
 
 #rainbow {
-  width: 120px;
+  width: 115px;
   color: white;
   transition: color .3s ease-out;
   background: linear-gradient(100deg, red, yellow, green, blue, purple);
